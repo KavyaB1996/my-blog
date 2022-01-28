@@ -160,4 +160,4 @@ app.get('*', (req,res)=>{
 })
 
 //port defined as 8000,callback fn that gets called when server is listening on 8000
-app.listen(8000, ()=> console.log('Server running on port 8000'));
+app.listen(process.env.PORT || 8000, ()=> console.log('Server running on port 8000'));
